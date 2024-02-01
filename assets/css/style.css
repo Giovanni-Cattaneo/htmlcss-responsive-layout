@@ -3,3 +3,12 @@
     margin: 0;
     padding: 0;
 }
+
+:root{
+    --responsive-primary: #9792e4;
+    --responsive-blue-dark: #0084fd;
+    --responsive-blue-light: #b5ddff;
+    --responsive-free: #fcc160;
+    --responsive-darkest: #333333;
+    --responsive-lightest: white;
+}
