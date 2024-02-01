@@ -40,6 +40,22 @@ main{
     background-color: var(--responsive-lightest);
 }
 
+#inside-card > div{
+    justify-content: space-between;
+}
+
+#inside-card :nth-child(1){
+    flex-direction: column;
+}
+
+#inside-card :nth-child(2){
+    justify-content: end;
+}
+
+img{
+    width: 50%;
+}
+
 .container{
     width: 100%;
     max-width: 1920px;
