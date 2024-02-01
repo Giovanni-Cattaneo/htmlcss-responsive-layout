@@ -12,3 +12,20 @@
     --responsive-darkest: #333333;
     --responsive-lightest: white;
 }
+
+#site-header{
+    background-color: var(--responsive-blue-dark);
+}
+
+.d-flex{
+    display: flex;
+}
+
+#container-header{
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
