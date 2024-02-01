@@ -16,6 +16,7 @@
 
 #site-header{
     background-color: var(--responsive-blue-dark);
+    margin-bottom: 2rem;
 }
 
 .d-flex{
@@ -28,22 +29,50 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+    max-width: 1176px;
 }
 
-.container-main{
+.container{
     width: 80%;
+    max-width: 1176px;
     margin: auto;
+    margin
 }
+
+.row{
+    flex-wrap: wrap;
+}
+
 
 .col-12{
-    height: 100px;
     background-color: var(--responsive-blue-light);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
 }
 
 
 @media screen and (min-width: 375px) {
-    .col-12{
-        width: calc((100 / 12) *1);
+    .col-12 {
+        width: calc((100% / 12) * 12);
     }
-    
 }
+
+@media screen and (min-width: 768px) {
+    .col-md-8 {
+        width: calc((100% / 12) * 8);
+    }
+
+    .col-md-4 {
+        width: calc((100% / 12) * 4);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .col-lg-6 {
+        width: calc((100% / 12) * 6);
+    }
+
+}
+
+
+
