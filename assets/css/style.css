@@ -110,8 +110,9 @@
         width: calc((100% / 12) * 4 - 1rem);
     }
 
-
-
+    .col-lg-8 {
+        width: calc((100% / 12) * 8 - 1rem);
+    }
 }
 
 
