@@ -36,7 +36,7 @@
     width: 80%;
     max-width: 1176px;
     margin: auto;
-    margin
+    margin-bottom: 5rem;
 }
 
 .row{
@@ -48,28 +48,53 @@
     background-color: var(--responsive-blue-light);
     border-radius: 1.5rem;
     padding: 1.5rem;
+    margin: 0.5rem;
+
 }
 
+.strategic-planning{
+    background-color: var(--responsive-primary);
+}
+
+.strategic-planning div{
+    background-color: inherit;
+    color: var(--responsive-lightest);
+}
+
+.expert-partners{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 0.5rem;
+}
+
+.bio{
+    background-color: var(--responsive-primary);
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+}
 
 @media screen and (min-width: 375px) {
     .col-12 {
-        width: calc((100% / 12) * 12);
+        width: calc((100% / 12) * 12 - 1rem);
     }
 }
 
 @media screen and (min-width: 768px) {
     .col-md-8 {
-        width: calc((100% / 12) * 8);
+        width: calc((100% / 12) * 8 - 1rem);
     }
 
     .col-md-4 {
-        width: calc((100% / 12) * 4);
+        width: calc((100% / 12) * 4 - 1rem);
     }
 }
 
 @media screen and (min-width: 1024px) {
     .col-lg-6 {
-        width: calc((100% / 12) * 6);
+        width: calc((100% / 12) * 6 - 1rem);
     }
 
 }
