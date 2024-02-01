@@ -40,21 +40,17 @@ main{
     background-color: var(--responsive-lightest);
 }
 
-#inside-card > div{
-    justify-content: space-between;
-}
-
-#inside-card :nth-child(1){
+#inside-card div:nth-child(1){
     flex-direction: column;
 }
 
-#inside-card :nth-child(2){
-    justify-content: end;
-}
+
 
 img{
-    width: 50%;
+    width: 100%;
 }
+
+
 
 .container{
     width: 100%;
