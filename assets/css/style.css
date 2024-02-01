@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 1px dashed black;
 }
 
 :root{
@@ -29,3 +30,20 @@
     color: white;
 }
 
+.container-main{
+    width: 80%;
+    margin: auto;
+}
+
+.col-12{
+    height: 100px;
+    background-color: var(--responsive-blue-light);
+}
+
+
+@media screen and (min-width: 375px) {
+    .col-12{
+        width: calc((100 / 12) *1);
+    }
+    
+}
