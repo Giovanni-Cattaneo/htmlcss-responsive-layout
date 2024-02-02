@@ -86,6 +86,7 @@ nav span{
 
 nav{
     column-gap: 1rem;
+    align-items: center;
 }
 
 #container-header{
@@ -95,6 +96,11 @@ nav{
     align-items: center;
     color: white;
     max-width: 1200px;
+}
+
+#site-header button{
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 /* #endregion header */
 
@@ -110,15 +116,16 @@ main{
 
 #demo-card{
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 1rem;
     height: 100%;
     color: var(--responsive-dark);
     padding-right: 2rem;
-    align-items: center;
+    align-items: start;
 }
 
+
 #demo-card button{
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     background-color: var(--responsive-blue-dark);
     color: var(--responsive-lightest);
@@ -132,7 +139,7 @@ main{
 
 #inside-card img{
     margin-bottom: -1.5rem; 
-    width: 65%;
+    width: 60%;
 }
 
 #inside-card div:nth-child(2){
@@ -297,6 +304,8 @@ main{
 
 .about-us-text img{
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 .about-us-text{
@@ -394,6 +403,10 @@ main{
 /* #region media-query */
 
 @media screen and (min-width: 768px) {
+    #inside-card{
+        flex-wrap: wrap;
+    }
+    
     .bio{
         flex-direction: column;
     }
@@ -412,23 +425,15 @@ main{
 }
 
 @media screen and (min-width: 992px) {
+    #inside-card{
+        flex-wrap: wrap;
+    }
     .bio{
         flex-direction: row;
     }
 
     .bio-text{
         align-items: start;
-    }
-    
-    #inside-card{
-        flex-wrap: nowrap;
-    }
-
-    #inside-card img{
-        width: 100%;
-    }
-    nav span{
-        display: block;
     }
 
     .fa-quote-left{
@@ -453,7 +458,26 @@ main{
         right: 1.5rem;
         font-size: 3.5rem;
     }
-    
+
+    .demo .col-12{
+        max-height: 340px;
+    }
+
+    nav span{
+        display: block;
+    }
+
+    #inside-card{
+        flex-wrap: nowrap;
+    }
+
+    #inside-card img{
+        width: 100%;
+    }
+
+    .fa-bars{
+        display: none;
+    }
     .col-lg-6 {
         width: calc((100% / 12) * 6 - 1rem);
     }
