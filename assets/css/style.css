@@ -283,6 +283,8 @@ main{
 
 /* #endregion benefit-section */
 
+
+/* #region about-us */
 .about-us{
     background-color: var(--responsive-lightest);
 }
@@ -336,6 +338,10 @@ main{
     padding-right: 0.5rem;
 }
 
+/* #endregion about-us */
+
+/* #region free */
+
 .free{
     flex-direction: column;
     align-items: center;
@@ -376,6 +382,9 @@ main{
     color: var(--responsive-free);
     font-size: 5rem;
 }
+
+/* #endregion free */
+
 
 /* #region footer*/
 
