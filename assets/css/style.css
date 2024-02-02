@@ -59,7 +59,7 @@ main{
 }
 
 #inside-card img{
-    width: 100%;
+    max-width: 300px;
 }
 
 #inside-card div:nth-child(2){
