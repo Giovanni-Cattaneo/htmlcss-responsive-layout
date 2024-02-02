@@ -325,6 +325,36 @@ main{
     padding: 1rem;
 }
 
+.free span{
+    color: lightgray;
+}
+
+.free p{
+    color: white;
+    text-align: center;
+}
+
+.free a{
+    color: inherit;
+}
+
+.free button{
+    color: var(--responsive-primary);
+    background-color: var(--responsive-lightest);
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.free :nth-child(2){
+    color: var(--responsive-lightest);
+    font-size: 2rem;
+}
+
+.free :nth-child(3){
+    color: var(--responsive-free);
+    font-size: 5rem;
+}
+
 /* #region footer*/
 
 #site-footer{
@@ -338,7 +368,7 @@ main{
     max-width: 768px;
     margin: auto;
     row-gap: 1rem;
-
+    padding: 1.5rem;
 }
 /* #endregion footer */
 
