@@ -19,6 +19,10 @@
     max-width: 1920px;
 }
 
+nav span{
+    display: none;
+}
+
 .d-flex{
     display: flex;
 }
@@ -178,6 +182,11 @@ main{
 }
 
 @media screen and (min-width: 992px) {
+
+    nav span{
+        display: block;
+    }
+
     .col-md-8 {
         width: calc((100% / 12) * 8 - 1rem);
     }
