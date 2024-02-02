@@ -66,6 +66,10 @@
 button{
     border-style: none;
 }
+
+p{
+    line-height: 2.2rem;
+}
 /* #endregion utilities */
 
 
@@ -215,6 +219,7 @@ main{
 
 /* #endregion partners */
 
+/* #region benefit-section */
 .benefit{
     background-color: var(--responsive-primary);
 }
@@ -256,9 +261,57 @@ main{
     border-radius: 1rem;
 }
 
+/* #endregion benefit-section */
+
 .about-us{
     background-color: var(--responsive-lightest);
-    text-align: center;
+}
+
+.about-us div > .col-12{
+    background-color: transparent;
+}
+
+.about-us-text{
+    flex-direction: column;
+    padding: 1.5rem;
+    row-gap: 2rem;
+}
+
+.about-us-text h2{
+    font-size: 3.5rem;
+    color: var(--responsive-primary);
+}
+
+.about-us-text img{
+    border-radius: 50%;
+}
+
+.about-us-text{
+    position: relative;
+}
+
+.fa-quote-left{
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    font-size: 5rem;
+    color: var(--responsive-primary);
+}
+
+.fa-quote-left + p{
+    color: var(--responsive-primary);
+    font-size: 1.5rem;
+}
+
+.about-us-text button{
+    color: var(--responsive-lightest);
+    padding: 0.75rem;
+    background-color: var(--responsive-primary);
+    border-radius: 1.25rem;
+}
+
+.fa-linkedin{
+    padding-right: 0.5rem;
 }
 
 .free{
@@ -301,6 +354,10 @@ main{
         justify-content: center;
         align-items: center;
     }
+
+    .fa-quote-left{
+        font-size: 6rem;
+    }
     .col-12 {
         width: calc((100% / 12) * 12 - 1rem);
     }
@@ -325,6 +382,10 @@ main{
     nav span{
         display: block;
     }
+
+    .fa-quote-left{
+        font-size: 2.5rem;
+    }
     .col-md-8 {
         width: calc((100% / 12) * 8 - 1rem);
     }
@@ -339,6 +400,12 @@ main{
 }
 
 @media screen and (min-width: 1200px) {
+    .fa-quote-left{
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 3.5rem;
+    }
+    
     .col-lg-6 {
         width: calc((100% / 12) * 6 - 1rem);
     }
