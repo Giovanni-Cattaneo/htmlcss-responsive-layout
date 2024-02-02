@@ -52,8 +52,9 @@ main{
 #demo-card{
     flex-direction: column;
     row-gap: 3rem;
+    height: 100%;
+    color: var(--responsive-dark);
 }
-
 
 #demo-card button{
     padding: 1rem;
@@ -69,6 +70,7 @@ main{
 
 #inside-card img{
     max-width: 200px;
+    margin-bottom: -1.5rem; 
 }
 
 #inside-card div:nth-child(2){
@@ -102,7 +104,7 @@ main{
     font-size: 5rem;
 }
 
-.card-container h3{
+.card-container h3, #demo-card h3{
     color: var(--responsive-blue-dark);
     font-size: 2rem;
 }
@@ -121,6 +123,25 @@ main{
 .strategic-planning div{
     background-color: inherit;
     color: var(--responsive-lightest);
+}
+
+.strategic-planning img{
+    width: 100%;
+}
+
+.planning{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.strategic-planning .col-lg-6:nth-child(2){
+    background-color: var(--responsive-lightest);
+}
+
+.bottom h2, .bottom p{
+    color: var(--responsive-darkest);
 }
 
 .expert-partners{
