@@ -106,6 +106,7 @@ main{
     height: 100%;
     color: var(--responsive-dark);
     padding-right: 2rem;
+    align-items: center;
 }
 
 #demo-card button{
@@ -114,6 +115,7 @@ main{
     background-color: var(--responsive-blue-dark);
     color: var(--responsive-lightest);
     font-size: 1.5rem;
+    width: 60%;
 }
 
 #inside-card{
@@ -121,9 +123,8 @@ main{
 }
 
 #inside-card img{
-    max-width: 200px;
     margin-bottom: -1.5rem; 
-    margin-right: -1rem;
+    width: 65%;
 }
 
 #inside-card div:nth-child(2){
@@ -137,12 +138,6 @@ main{
 
 .strategic-planning{
     background-color: var(--responsive-primary);
-}
-
-.container-partner{
-    width: 100%;
-    max-width: 1920px;
-    background-color: var(--responsive-lightest);
 }
 
 .strategic-planning div{
@@ -181,11 +176,34 @@ main{
     background-color: var(--responsive-lightest);
 }
 
+.container-partner{
+    width: 100%;
+    max-width: 1920px;
+    background-color: var(--responsive-lightest);
+}
+
+
 .bio{
     background-color: var(--responsive-primary);
     padding: 1rem;
     border-radius: 1rem;
     justify-content: space-between;
+    gap: 1rem;
+    color: var(--responsive-lightest);
+    align-items: center;
+}
+
+.bio img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    max-width: 30%;
+    border-radius: 50%;
+}
+
+.bio-text{
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 .benefit{
@@ -230,6 +248,7 @@ main{
 /* #region media-query */
 
 @media screen and (min-width: 768) {
+
     .col-12 {
         width: calc((100% / 12) * 12 - 1rem);
     }
@@ -238,6 +257,10 @@ main{
 @media screen and (min-width: 992px) {
     #inside-card{
         flex-wrap: nowrap;
+    }
+
+    #inside-card img{
+        width: 100%;
     }
     nav span{
         display: block;
