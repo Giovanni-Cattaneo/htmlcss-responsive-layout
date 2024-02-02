@@ -10,6 +10,7 @@
     --responsive-blue-light: #b5ddff;
     --responsive-free: #fcc160;
     --responsive-darkest: #333333;
+    --responsive-dark: #5b6f80;
     --responsive-lightest: white;
 }
 
@@ -40,17 +41,31 @@ main{
     background-color: var(--responsive-lightest);
 }
 
-#inside-card div:nth-child(1){
+#demo-card{
     flex-direction: column;
+    row-gap: 3rem;
 }
 
+#inside-card{
+    flex-wrap: wrap;
+}
 
+#demo-card button{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--responsive-blue-dark);
+    color: var(--responsive-lightest);
+    font-size: 1.5rem;
+}
 
-img{
+#inside-card img{
     width: 100%;
 }
 
-
+#inside-card div:nth-child(2){
+    justify-content: center;
+    padding-top: 2rem;
+}
 
 .container{
     width: 100%;
@@ -66,11 +81,27 @@ img{
     margin: auto;
 }
 
+.card-container{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    color: var(--responsive-dark);
+}
+
+.card-container .fa-solid{
+    color: var(--responsive-blue-dark);
+    font-size: 5rem;
+}
+
+.card-container h3{
+    color: var(--responsive-blue-dark);
+    font-size: 2rem;
+}
 
 .col-12{
     background-color: var(--responsive-blue-light);
     border-radius: 1.5rem;
-    padding: 1.5rem;
+    padding: 2.5rem;
     margin: 0.5rem;
 }
 
