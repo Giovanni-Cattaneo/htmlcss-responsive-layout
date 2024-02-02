@@ -459,6 +459,15 @@ main{
         font-size: 3.5rem;
     }
 
+    .strategic-planning .col-12:nth-child(2){
+        margin-top: auto;
+        width: 40%;
+    }
+
+    .bottom img{
+        width: 40%;
+    }
+
     .demo .col-12{
         max-height: 340px;
     }
