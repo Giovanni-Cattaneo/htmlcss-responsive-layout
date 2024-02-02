@@ -171,6 +171,14 @@ main{
 .bottom h2, .bottom p{
     color: var(--responsive-darkest);
 }
+
+.fa-arrow-down{
+    color: var(--responsive-darkest);
+    font-size: 1.5rem;
+    background-color: var(--responsive-primary);
+    padding: 1.3rem 1.5rem;
+    border-radius: 50%;
+}
 /* #endregion strategic-planning */
 
 
@@ -184,6 +192,10 @@ main{
     width: 80%;
     margin: auto;
     background-color: var(--responsive-lightest);
+}
+
+.expert-partners h2{
+    color: var(--responsive-primary);
 }
 
 .container-partner{
@@ -226,6 +238,7 @@ main{
 
 .benefit h2{
     text-align: center;
+    color: var(--responsive-lightest);
 }
 
 .benefit div > .col-12{
@@ -369,6 +382,11 @@ main{
     margin: auto;
     row-gap: 1rem;
     padding: 1.5rem;
+    color: var(--responsive-lightest);
+}
+
+.container-footer a{
+    color: var(--responsive-primary);
 }
 /* #endregion footer */
 
